@@ -1,90 +1,151 @@
+#heading {
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Gendy Modern Sans', sans-serif;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+}
+
+/* Full-width sections */
+section {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #f97a02;
+  font-family: 'Gendy Modern Sans', sans-serif;
+}
+
+/* About section */
+.about-section {
+  background-color: #191919f4;
+  color: white;
+  text-align: center;
+  padding: 60px;
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Slider section */
+.slider-section {
+  background-color: #191919f4;
+  color: white;
+  padding: 15px;
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) { /* For tablets and smaller devices */
+  .carousel-item img {
+      height: 300px; /* Adjust height for tablets */
+  }
+}
+
+@media (max-width: 576px) { /* For mobile phones */
+  .carousel-item img {
+      height: 200px; /* Adjust height for mobile devices */
+  }
+}
+
+/* Contact Us Section */
+.contact-section {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #191919f4;
+  padding: 25px;
+  color: white;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h3 {
+  color: #ffffff;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color:white;
+}
+
+.contact-info i {
+  color: #f97a02;
+  margin-right: 10px;
+}
+
+.contact-info span {
+  color: #f1f1f1;
+  font-size: 10px !important;
+}
+
+ /* Add padding and adjust spacing for mobile */
+ @media (max-width: 576px) {
+  .button-group a {
+      padding: 12px 20px;
+      width: 100%;
+      margin-top: 12px;
+  }
+
+  .button-group a {
+    width: auto;
+}
+}
+
+
+/* Clickable Image Section */
+.contact-section .img-fluid {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-section .img-fluid:hover {
+  transform: scale(1.05); /* Subtle hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Styling */
+button.btn-outline-light a {
+  color: #ffffff;
+}
+
+button.btn-outline-light:hover {
+  background-color: #3498db; /* Hover color */
+  border-color: #3498db;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-section .row {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .contact-section .col-md-6 {
+      margin-bottom: 30px;
+  }
+}
+
+/* Add the background */
 body {
-    margin: 0; 
-    padding: 0; 
-    filter: brightness(100%);
-    color: BACK;
-    background-color: #e1cfcf67;
+  background-image: url('https://files.oaiusercontent.com/file-3UkAGINmKzDPS7sze4CeHvMu?se=2024-10-12T10%3A05%3A58Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D8266a236-dc71-4ac6-821c-227c28b635e7.webp&sig=Pa2SgEWZC9uFpNyQpCXupaf%2BpE9vfDvZibrIQjuhxF0%3D');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-
-.heading-background {
-    background-image: url(/images/retail\,\ shop\ building\ front.jpg);
-    color: white;
-    border-bottom: 5px solid white;
-    border-left: 5px solid white;
-    border-right: 5px solid white;
-    background-size: cover;
-}
-
-.intro-background {
-padding-top: 35px;
-border-bottom: 4px solid white;
-background-size: cover;
-background-image: url(https://ivinsutah.gov/wp-content/uploads/2016/05/professional-backgrounds-for-websites3-2.jpg);
-padding-bottom: 10px;
-}
-
-.container {
-    height: 100px;
-}
-
-.header1 {
-    width: 100%; 
-    max-width: 290px; 
-    margin: auto;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 18px;
-    padding-bottom: 10px;
-}
-
-.content {
-    background-color: transparent;
-    width: 80%;
-    margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    backdrop-filter: blur(4px);
-    font-size: 18px;
-    color: black;
-}
-
-
-h2 {
-    border-bottom: 1px solid black;
-    width: 80%; /* Adjust this value to set your desired width */
-    margin: 0 auto;
-    padding-top: 10px;
-}
-
-.slider-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .prev-btn,
-  .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    color: black;
-    font-size: 20px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .prev-btn {
-    left: 0;
-  }
-  
-  .next-btn {
-    right: 0;
-  }
-  

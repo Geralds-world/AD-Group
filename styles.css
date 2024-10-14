@@ -1,4 +1,3 @@
-
 body {
     background-image: url(https://images.pexels.com/photos/1382102/pexels-photo-1382102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
@@ -6,15 +5,63 @@ body {
 }
 
 #heading {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Gendy Modern Sans', sans-serif;
 }
-  
-.container {
-    border: 4px solid white;
-    border-radius: 1rem;
-    box-shadow: 10px 10px 20px black,
-                -5px -5px 5px #b8691e;
-    backdrop-filter: blur(4px);
-    font-size: 20px;
-    color: white; 
+
+.logo-img {
+    width: 120px;
+    height: auto;
+}
+
+
+.welcome-section {
+    background-color: rgba(29, 48, 56, 0.916);
+    margin: 10px;
+    color: white;
+    box-shadow: 2px 2px 2px #f97a02, -2px -2px 2px #f97a02;
+}
+
+.services-section h2 {
+    color: white;
+    margin-bottom: 60px;
+    padding-top: 50px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #f97a02;
+    font-family: 'Gendy Modern Sans', sans-serif;
+}
+
+.service-item {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Gendy Modern Sans', sans-serif;
+}
+
+.circle-img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.459);
+}
+
+.circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+footer {
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer span {
+    color: white;
 }

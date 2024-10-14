@@ -1,0 +1,153 @@
+body {
+    background-color: #f8f9fa !important;
+}
+
+#heading {
+    font-size: 1.5rem;
+    color: #2c2c2c !important;
+    font-family: 'Gendy Modern Sans', sans-serif;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+}
+
+/* Full-width sections */
+section {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #f97a02;
+    font-family: 'Gendy Modern Sans', sans-serif;
+}
+
+.distribution-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+/* Welcome Section */
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    max-width: 600px;
+    position: relative; 
+    z-index: 2; 
+}
+
+.welcome-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #1a1a3d !important; 
+    margin: 0;
+}
+
+.welcome-description {
+    font-size: 18px;
+    color: #2c2c2c; 
+    margin: 20px 0;
+}
+
+.image-container {
+    flex: 1; 
+    text-align: right; 
+}
+
+.forklift-image {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 15px; /* Adjusted for consistency */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Unique design elements */
+.welcome-section:before,
+.welcome-section:after {
+    content: '';
+    position: absolute;
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%; 
+    background-color: #d1e7dd; 
+    top: -150px; 
+    left: -150px; 
+    z-index: 0; 
+}
+
+.welcome-section:after {
+    top: auto;
+    bottom: -150px; 
+    right: -150px; 
+}
+
+.bulk-products-section img {
+    width: 100%;
+    max-width: 530px;
+    height: auto;
+}
+
+.bulk-products-section .row.mb-5 .col-md-6.order-md-2 img {
+    margin-left: 65px;
+}
+
+.bulk-products-section .row.mb-5 {
+border-bottom: 4px solid #d1e7dd;
+border-radius: 15px;
+}
+
+/* Bulk Products Section */
+.bulk-products-section {
+    padding: 50px 0;
+}
+
+.bulk-products-section h2 {
+    color: #1a1a3d; 
+    margin-bottom: 30px;
+}
+
+.bulk-products-section h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.bulk-products-section p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.bulk-products-section img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .distribution-section h1, .bulk-products-section h2 {
+        font-size: 2rem; 
+    }
+
+    .distribution-section h2, .bulk-products-section h3 {
+        font-size: 1.5rem; 
+    }
+
+    .distribution-section h3 {
+        font-size: 1.2rem; 
+    }
+
+    .welcome-title {
+        font-size: 36px; /* Responsive title size */
+    }
+}
