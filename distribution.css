@@ -100,7 +100,7 @@ section {
 }
 
 .bulk-products-section .row.mb-5 .col-md-6.order-md-2 img {
-    margin-left: 65px;
+    align-items: end;
 }
 
 .bulk-products-section .row.mb-5 {
@@ -133,6 +133,22 @@ border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Ensure the image column stretches to the end */
+.bulk-products-section .row {
+    display: flex;
+    align-items: center;
+}
+
+.bulk-products-section .row > .col-md-6 {
+    flex: 1;
+}
+
+.bulk-products-section .row > .col-md-6.order-md-2 {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .distribution-section h1, .bulk-products-section h2 {
@@ -148,6 +164,82 @@ border-radius: 15px;
     }
 
     .welcome-title {
-        font-size: 36px; /* Responsive title size */
+        font-size: 36px;
+    }
+}
+
+
+.bulk-products-section ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.bulk-products-section ul li {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+    .bulk-products-section ul {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.contact-item {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Gendy Modern Sans', sans-serif;
+    color: #1a1a3d;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+.contact-info {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f97a02;
+}
+
+.contact-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #1a1a3d;
+    border: 2px solid #f97a02;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-link:hover {
+    background-color: #f97a02;
+    color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        margin-bottom: 15px;
     }
 }

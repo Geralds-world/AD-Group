@@ -44,6 +44,7 @@ section {
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .carousel-item img {
@@ -74,6 +75,7 @@ section {
   color: white;
   margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .contact-info h3 {
@@ -148,4 +150,26 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+.thumbnail-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.thumbnail img {
+  width: 100px; /* Set the desired thumbnail size */
+  border: 2px solid transparent; /* Default border */
+  transition: border 0.3s; /* Smooth transition */
+}
+
+.carousel-item img {
+  max-height: 500px; /* Set max height for main images */
+  object-fit: contain; /* Ensure images are contained */
 }
