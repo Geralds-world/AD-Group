@@ -146,7 +146,7 @@ button.btn-outline-light:hover {
 
 /* Add the background */
 body {
-  background-image: url('https://files.oaiusercontent.com/file-3UkAGINmKzDPS7sze4CeHvMu?se=2024-10-12T10%3A05%3A58Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D8266a236-dc71-4ac6-821c-227c28b635e7.webp&sig=Pa2SgEWZC9uFpNyQpCXupaf%2BpE9vfDvZibrIQjuhxF0%3D');
+  background-image: url('/AD-Group/images/background.PNG');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
